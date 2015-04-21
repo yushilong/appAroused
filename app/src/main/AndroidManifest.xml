@@ -1,0 +1,31 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.aroused">
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:icon="@mipmap/ic_launcher"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.lib.RouteDispatchActivity"
+            android:label="被Scheme唤起的界面"
+            android:theme="@style/Dispatch">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.APP_BROWSER" />
+
+                <data android:scheme="kanqiu" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".TargetActivity"
+            android:label="唤起界面之后的第一个界面"/>
+        <activity
+            android:name=".DefaultTargetActivity"
+            android:label="默认界面"/>
+    </application>
+
+</manifest>

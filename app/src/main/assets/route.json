@@ -1,0 +1,16 @@
+{
+  "routeKey": "route",
+  "defaultTarget": "com.aroused.TargetActivity",
+  "routes": {
+    "football": {
+      "params": {},
+      "target": "com.aroused.TargetActivity",
+      "defaultTarget": "com.aroused.DefaultTargetActivity"
+    },
+    "nba": {
+      "params": {"key1":"keyValue1","key2":"keyValue2"},
+      "target": "com.aroused.TargetActivity",
+      "defaultTarget": "com.aroused.DefaultTargetActivity"
+    }
+  }
+}
